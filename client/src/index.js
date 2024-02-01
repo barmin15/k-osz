@@ -5,18 +5,38 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 //pages
-import Appbar from './appbar/page/Appbar';
-import Home from './unsecure/pages/Home';
+import AppBar from './appbar/page/Appbar';
+import LandingPage from './unsecure/landingPage/LandingPage';
+import EventsPage from './unsecure/eventsPage/EventsPage';
+import EventPage from './unsecure/eventPage/EventPage';
+import NewsPage from './unsecure/newsPage/NewsPage';
+import TracksPage from './unsecure/tracksPage/TracksPage';
 
 const Router = createBrowserRouter([
   {
-    path: "/",
-    element: <Appbar />,
+    path: '/',
+    element: <AppBar />,
     children: [
       {
-        path: "/",
-        element: <Home />
-      }
+        path: '/',
+        element: <LandingPage />
+      },
+      {
+        path: '/events',
+        element: <EventsPage /> 
+      }, 
+      {
+      path: '/event/:title',
+      element: <EventPage />
+      },
+      {
+        path: '/news',
+        element: <NewsPage />
+      },
+      {
+        path: '/tracks',
+        element: <TracksPage />
+      },
     ]
   }
 ]);
@@ -28,7 +48,7 @@ root.render(
     <ThemeProvider theme={createTheme({
       palette: {
         primary: {
-          main: 'rgba(27, 36, 48,.9)',
+          main: 'rgba(0, 0, 0,.87)',
         },
         secondary: {
           main: '#EEF5FF',
