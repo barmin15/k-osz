@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 //dunmmy data imports
 import { events } from "../../dummyData/events";
+import { colors } from "../../style/colors";
 
 //component imports
 import FullWidthLayout from "../../layout/simple/FullWidthLayout";
@@ -37,7 +38,7 @@ export default function EventPage() {
                 <FullWidthLayout display={<Description event={event} />} />
                 <FullWidthLayout display={<Lineup event={event}/>} />
                 <GridLayout displayFeed={<Tickets event={event}/>}/>
-                <FullWidthLayout bgcolor='primary.main' display={<Countdown event={event} />} />
+                <FullWidthLayout bgcolor={colors().primary} display={<Countdown event={event} />} />
                 </>
             :
             <div>loading</div>)

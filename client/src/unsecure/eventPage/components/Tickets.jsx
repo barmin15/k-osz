@@ -1,6 +1,7 @@
 //React imports
 import React from "react"
 import { useNavigate } from "react-router-dom";
+import { colors } from "../../../style/colors";
 
 import { Box, Button, Typography } from "@mui/material"
 
@@ -13,7 +14,7 @@ export default function Tickets({ event }) {
             {event.prices.map((price, index) => (
                 <Typography key={index} sx={{ textAlign: 'center', fontFamily: style.secondaryFont }}>{price}</Typography>
             ))}
-            <Button href={event.ticketUrl} target="_blank" variant='contained' sx={{ bgcolor: 'primary.main', color: 'white', marginTop: 3, '&:hover': { bgcolor: 'primary.main', color: 'secondary.main' } }}>BUY</Button>
+            <Button href={event.ticketUrl} target="_blank" variant='contained' sx={{ bgcolor: colors().primary, color: 'white', marginTop: 3, '&:hover': { bgcolor: colors().primary, color: colors().secondary } }}>BUY</Button>
         </Box>
     )
 }

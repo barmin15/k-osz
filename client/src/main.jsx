@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-
 //pages
 import AppBar from './appbar/page/Appbar';
 import LandingPage from './unsecure/landingPage/LandingPage';
@@ -45,26 +43,6 @@ const Router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={createTheme({
-      palette: {
-        primary: {
-          main: 'rgba(0, 0, 0,.87)',
-        },
-        secondary: {
-          main: '#816797',
-        },
-        info: {
-          main: "#222831"
-        },
-        success: {
-          main: "#E1F0DA"
-        },
-        error: {
-          main: "#FFCCCC"
-        }
-      },
-    })}>
     <RouterProvider router={Router} />
-  </ThemeProvider>
   </React.StrictMode >
 );

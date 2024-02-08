@@ -3,6 +3,7 @@ import { Parallax } from 'react-parallax';
 import { useNavigate } from 'react-router-dom';
 
 import { events } from '../../../dummyData/events';
+import { colors } from '../../../style/colors';
 
 import { Box, Typography, Button, Fade } from '@mui/material';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -38,7 +39,7 @@ export default function Events() {
         >
             <div ref={(ref) => (cardsRef.current[index] = ref)}>
                 <Box
-                    bgcolor={'primary.main'}
+                    bgcolor={colors().primary}
                     sx={{
                         postion: 'relative',
                         minHeight: '70vh',
@@ -73,8 +74,8 @@ export default function Events() {
                             bottom: { xs: 10, md: 30 },
                             right: { xs: 5, md: 30 },
                             width: { xs: 150, md: 200 },
-                            backgroundColor: 'primary.main',
-                            '&:hover': { color: 'secondary.main' },
+                            backgroundColor: colors().primary,
+                            '&:hover': { color: colors().secondary, bgcolor: colors().primary },
                             fontFamily: 'Fruitella, sans-serif'
                         }}>
                         check out<KeyboardArrowRightIcon />

@@ -10,6 +10,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 
+import { colors } from "../../style/colors";
+
 export function MobileAppBar({
     pages,
     container,
@@ -20,7 +22,7 @@ export function MobileAppBar({
     const navigate = useNavigate();
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', bgcolor: "primary.main" }}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', bgcolor: colors().primary }}>
             <Typography variant="h6" sx={{ my: 2, color: "white", fontFamily: 'Fruitella, sans-serif' }}>
                 KÁOSZ
             </Typography>

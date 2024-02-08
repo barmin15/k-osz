@@ -1,5 +1,4 @@
 import { MobileAppBar } from './MobileAppBar';
-import React from "react";
 import { Outlet, useNavigate } from 'react-router-dom';
 
 import AppBar from '@mui/material/AppBar';
@@ -9,6 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { MenuItem } from '@mui/material';
+
+import { colors } from '../../style/colors';
 
 export function MonitorAppBar({
     HideOnScroll,
@@ -22,8 +23,10 @@ export function MonitorAppBar({
 
     return <><CssBaseline />
         <HideOnScroll {...props}>
-            <AppBar sx={{
-                height: 45
+            <AppBar 
+            sx={{
+                height: 45,
+                bgcolor: colors().primary
             }}>
                 <Toolbar variant='dense' sx={{
                     display: "flex"
@@ -45,12 +48,12 @@ export function MonitorAppBar({
                             md: 'block'
                         }
                     }}
-                        onClick={(e) => navigate(page[1])}
+                        onClick={() => navigate(page[1])}
                     >
                         <Typography textAlign="center" sx={{
                             fontFamily: 'Fruitella, sans-serif',
                             '&:hover': {
-                                color: '#816797'
+                                color: colors().secondary
                             }
                         }}>{page[0]}</Typography>
                     </MenuItem>)}
