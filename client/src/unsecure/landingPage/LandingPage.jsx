@@ -1,20 +1,22 @@
-import React, { useState, useEffect } from "react"
+//React imports
+import React, { useEffect } from "react"
 
 //component imports
-import GridLayout from "../../layout/grid/GridLayout";
 import FullWidthLayout from "../../layout/simple/FullWidthLayout";
 import SlidingAlbumsList from "./components/SlidingAlbumsList";
 import AboutUs from "./components/AboutUs";
-import ContributoSlider from "./components/ContributorSlider";
+import ContributorSlider from "./components/ContributorSlider";
 import Contact from "./components/Contact"
 
-export default function Home() {
+export default function LandingPage() {
+
+    useEffect(() => { window.scrollTo(0, 0); })
 
     return (
         <>
-            <FullWidthLayout display={<AboutUs />} bgcolor={'primary.main'} />
-            <FullWidthLayout display={<ContributoSlider />} />
+            <FullWidthLayout display={<AboutUs />} bgcolor='primary.main' />
+            <FullWidthLayout display={<ContributorSlider />} />
             <FullWidthLayout display={<SlidingAlbumsList />} />
-            <FullWidthLayout display={<Contact />} bgcolor={'primary.main'} />
+            <FullWidthLayout display={<Contact />} bgcolor='primary.main' />
         </>)
 }
