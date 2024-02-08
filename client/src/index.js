@@ -23,11 +23,11 @@ const Router = createBrowserRouter([
       },
       {
         path: '/events',
-        element: <EventsPage /> 
-      }, 
+        element: <EventsPage />
+      },
       {
-      path: '/event/:title',
-      element: <EventPage />
+        path: '/event/:title',
+        element: <EventPage />
       },
       {
         path: '/news',
@@ -51,7 +51,7 @@ root.render(
           main: 'rgba(0, 0, 0,.87)',
         },
         secondary: {
-          main: '#EEF5FF',
+          main: '#816797',
         },
         info: {
           main: "#222831"
@@ -64,7 +64,7 @@ root.render(
         }
       },
     })}>
-      <RouterProvider router={Router} />
-    </ThemeProvider>
-  </React.StrictMode>
+    <RouterProvider router={Router} />
+  </ThemeProvider>
+  </React.StrictMode >
 );
