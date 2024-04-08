@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 //React imports
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 //MUI imports
 import { Box, Fade, Typography } from '@mui/material';
 
-export default function TopTitle({text}) {
+export default function TopTitle({ text }) {
   const imageRef = useRef(null);
 
   useEffect(() => {
@@ -38,13 +39,15 @@ export default function TopTitle({text}) {
 
 
   return (
-    <Box sx={{ paddingTop: 10, paddingBottom: 10, height: '70vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+    <Box sx={{
+      paddingTop: 10, paddingBottom: 10, height: '93vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden'
+    }}>
       <Fade
         in={true}
         timeout={{ enter: 2500, exit: 0 }}
       >
-        <Typography ref={imageRef} sx={{transition: 'transform 0.3s ease-out', color: 'white', fontSize: { xs: 25, sm: 30, md: 35 }, textAlign: 'center', paddingBottom: 5, fontFamily: 'Rave, sans-serif' }}>
-        {text}
+        <Typography ref={imageRef} sx={{ transition: 'transform 0.3s ease-out', color: 'white', fontSize: { xs: 25, sm: 30, md: 35 }, textAlign: 'center', paddingBottom: 5, fontFamily: 'Rave, sans-serif' }}>
+          {text}
         </Typography>
       </Fade>
     </Box>

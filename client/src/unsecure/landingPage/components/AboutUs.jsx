@@ -1,5 +1,5 @@
-import TopTitle from "../../components/TopTitle";
+import TopTitle from "./TopTitle"
 
 export default function AboutUs(){
-  return <TopTitle text={'Budapest based raves with an emphasis on music and a touch of kaosz'}/>
+  return <TopTitle text={<span>Rave series launched by Adam<br />Based in Budapest <br />strictly underground and nature</span>}/>
 }

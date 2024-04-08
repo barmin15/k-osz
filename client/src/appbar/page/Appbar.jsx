@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 
 
 function Appbar(props) {
-    const pages = [["Discover", "/"], ["News", "/news"], ["Events", "/events"], ["Tracks", "/tracks"]];
+    const pages = [["Discover", "/"], ["News", "/news"], ["Events", "/events"]];
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 

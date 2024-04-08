@@ -22,9 +22,9 @@ export function MobileAppBar({
     const navigate = useNavigate();
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', bgcolor: colors().primary }}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', bgcolor: colors().primary}}>
             <Typography variant="h6" sx={{ my: 2, color: "white", fontFamily: 'Fruitella, sans-serif' }}>
-                KÁOSZ
+                ORIGIN RAVE
             </Typography>
             <Divider />
             <List>

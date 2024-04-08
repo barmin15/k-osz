@@ -16,8 +16,8 @@ export const events = () => {
                 'lütyő 2:00',
                 'pudruczó 3:00',
                 'seprex 4:30'],
-            dateStart: new Date('February 23 , 2024 22:00:00'),
-            dateEnd: new Date('February 24 , 2024 06:00:00'),
+            dateStart: new Date('June 25 , 2024 22:00:00'),
+            dateEnd: new Date('March 28 , 2025 06:00:00'),
             location: '',
         },
         {
@@ -36,8 +36,8 @@ export const events = () => {
                 'lütyő 2:00',
                 'pudruczó 3:00',
                 'seprex 4:30'],
-                dateStart: new Date('February 8 , 2024 11:00:00'),
-                dateEnd: new Date('February 8 , 2024 23:00:00'),
+                dateStart: new Date('March 2 , 2024 11:00:00'),
+                dateEnd: new Date('June 10 , 2024 23:00:00'),
             location: '',
         },
         {

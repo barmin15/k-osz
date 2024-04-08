@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -8,7 +9,6 @@ import LandingPage from './unsecure/landingPage/LandingPage';
 import EventsPage from './unsecure/eventsPage/EventsPage';
 import EventPage from './unsecure/eventPage/EventPage';
 import NewsPage from './unsecure/newsPage/NewsPage';
-import TracksPage from './unsecure/tracksPage/TracksPage';
 
 const Router = createBrowserRouter([
   {
@@ -30,10 +30,6 @@ const Router = createBrowserRouter([
       {
         path: '/news',
         element: <NewsPage />
-      },
-      {
-        path: '/tracks',
-        element: <TracksPage />
       },
     ]
   }

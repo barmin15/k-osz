@@ -14,7 +14,7 @@ export default function Events() {
     const cardsRef = useRef([]);
 
     useEffect(() => {
-        //handling card repwsonsivity to scrolling
+        //handling card response to scrolling
         const handleScroll = () => {
             const cardIndexInView = cardsRef.current.findIndex((cardRef) => {
                 const rect = cardRef.getBoundingClientRect();

@@ -1,2 +1,2 @@
 
-export const contributors = () => ['Bokor Ármin', 'Molnár Zoltán', 'Benedek Sándor', 'Balázs Dzsudzsák', 'Király Gábor', 'Walter White', 'Jesse Pinkman']
+export const contributors = () => ["Balázs", "Lia", "Bence", "Alexandra", "Gergő", "Jázmin", "Botond", "Norbi", "Dani", "Mateosz", "Andreas", "Gábor", "Dorottya", "Dávid", "Ádám", "Anett", "Ármin"];

@@ -1,5 +1,5 @@
 //React imports
-import React, { useEffect } from "react"
+import { useEffect } from "react"
 
 //component imports
 import FullWidthLayout from "../../layout/simple/FullWidthLayout";
@@ -18,7 +18,7 @@ export default function LandingPage() {
         <>
             <FullWidthLayout display={<AboutUs />} bgcolor={colors().primary} />
             <FullWidthLayout display={<ContributorSlider />} />
-            <FullWidthLayout display={<SlidingAlbumsList />} />
+            {/*  <FullWidthLayout display={<SlidingAlbumsList />} />*/}
             <FullWidthLayout display={<Contact />} bgcolor={colors().primary} />
         </>)
 }

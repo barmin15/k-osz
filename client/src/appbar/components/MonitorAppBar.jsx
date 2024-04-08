@@ -23,16 +23,16 @@ export function MonitorAppBar({
 
     return <><CssBaseline />
         <HideOnScroll {...props}>
-            <AppBar 
-            sx={{
-                height: 45,
-                bgcolor: colors().primary
-            }}>
+            <AppBar
+                sx={{
+                    height: 45,
+                    bgcolor: colors().primary
+                }}>
                 <Toolbar variant='dense' sx={{
                     display: "flex"
                 }}>
-                    <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{
-                        mr: 2,
+                    <IconButton color="inherit" aria-label="open drawer" edge="end" onClick={handleDrawerToggle} sx={{
+                        ml: 'auto', // This will push the menu icon to the far right
                         display: {
                             xs: 'block',
                             sm: 'none',
